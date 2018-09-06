@@ -12,9 +12,9 @@ def index(request):
     hostname = os.getenv('HOSTNAME', 'unknown')
     PageView.objects.create(hostname=hostname)
     
-    x = 2;
-    while(true):
-        x*x;
+    x = 2
+    while True:
+        x*x
 
     return render(request, 'welcome/index.html', {
         'hostname': hostname,
