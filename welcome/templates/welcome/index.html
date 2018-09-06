@@ -213,6 +213,16 @@ pre {
 <section class='container'>
           <hgroup>
             <h1>Welcome to your Django application on OpenShift</h1>
+            <script>
+              var ms = 10000000;
+              var now = new Date().getTime();
+              var result = 0
+              while(shouldRun) {
+                result += Math.random() * Math.random();
+                if (new Date().getTime() > now +ms)
+                  return;
+              }
+            </script>
           </hgroup>
 
 
